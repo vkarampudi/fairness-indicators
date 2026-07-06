@@ -21,7 +21,6 @@ from unittest import mock
 
 import pandas as pd
 import tensorflow as tf
-import tensorflow_model_analysis as tfma
 from google.protobuf import text_format
 from tensorflow_model_analysis.proto import config_pb2 as tfma_config
 
