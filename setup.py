@@ -43,7 +43,7 @@ REQUIRED_PACKAGES = [
     "tensorflow-data-validation>=1.21.0,<2.0.0",
     "tensorflow-model-analysis>=0.52.0,<0.53.0",
     "witwidget>=1.4.4,<2",
-    "protobuf>=4.21.6,<6.0.0",
+    "protobuf>=6.0.0,<7.0.0",
 ]
 
 TEST_PACKAGES = [

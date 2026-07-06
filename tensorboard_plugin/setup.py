@@ -37,7 +37,7 @@ def select_constraint(default, nightly=None, git_master=None):
 
 
 REQUIRED_PACKAGES = [
-    "protobuf>=4.21.6,<6.0.0",
+    "protobuf>=6.0.0,<7.0.0",
     "tensorboard>=2.21.0,<2.22.0",
     "tensorflow>=2.21,<2.22",
     "tf-keras>=2.21,<2.22",
