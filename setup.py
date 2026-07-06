@@ -44,6 +44,7 @@ REQUIRED_PACKAGES = [
     "tensorflow-model-analysis>=0.52.0,<0.53.0",
     "witwidget>=1.4.4,<2",
     "protobuf>=6.0.0,<7.0.0",
+    "numpy>=1.23.5,<2.0.0",
 ]
 
 TEST_PACKAGES = [
