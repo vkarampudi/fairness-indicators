@@ -40,7 +40,7 @@ def select_constraint(default, nightly=None, git_master=None):
 REQUIRED_PACKAGES = [
     "tensorflow>=2.21,<2.22",
     "tensorflow-hub>=0.16.1,<1.0.0",
-    "tensorflow-data-validation>=1.21.0,<2.0.0",
+    "tensorflow-data-validation>=1.21.0,<1.22.0",
     "tensorflow-model-analysis>=0.52.0,<0.53.0",
     "witwidget>=1.4.4,<2",
     "protobuf>=6.0.0,<7.0.0",
