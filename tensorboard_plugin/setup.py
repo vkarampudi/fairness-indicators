@@ -43,7 +43,8 @@ REQUIRED_PACKAGES = [
     "tf-keras>=2.21,<2.22",
     "tensorflow-model-analysis>=0.52,<0.53",
     "werkzeug<2",
-    "numpy>=1.23.5,<2.0.0",
+    "numpy>=1.23.5,<2.0.0; python_version < '3.13'",
+    "numpy>=2.1.0; python_version >= '3.13'",
 ]
 
 TEST_PACKAGES = [
