@@ -10,6 +10,27 @@
 
 ## Deprecations
 
+# Version 0.52.0
+
+## Major Features and Improvements
+
+*   N/A
+
+## Bug Fixes and Other Changes
+
+*   Depends on `tensorflow>=2.21,<2.22`.
+*   Depends on `tensorflow-data-validation>=1.21.0,<1.22.0`.
+*   Depends on `tensorflow-model-analysis>=0.52.0,<0.53.0`.
+*   Removed Python 3.9 support and added support for Python 3.10, 3.11, 3.12, and 3.13.
+
+## Breaking Changes
+
+*   N/A
+
+## Deprecations
+
+*   N/A
+
 # Version 0.48.0
 
 ## Major Features and Improvements
