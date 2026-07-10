@@ -79,7 +79,6 @@ jobs:
         uses: pypa/gh-action-pypi-publish@release/v1.12
         with:
           password: ${{ secrets.PYPI_API_TOKEN || secrets.PYPI_TOKEN || secrets.PYPI_PASSWORD }}
-          packages_dir: wheels/
-          repository_url: https://pypi.org/legacy/
-          verify_metadata: false
+          packages-dir: wheels/
+          verify-metadata: false
           verbose: true
