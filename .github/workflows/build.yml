@@ -19,9 +19,6 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.10", "3.11", "3.12", "3.13"]
 
     steps:
     - name: Checkout
@@ -30,7 +27,7 @@ jobs:
     - name: Set up python
       uses: actions/setup-python@v5
       with:
-        python-version: ${{ matrix.python-version }}
+        python-version: "3.12"
 
     - name: Install python build dependencies
       run: |
@@ -46,12 +43,12 @@ jobs:
     - name: List and check wheels
       run: |
         pip install twine pkginfo>=1.11.0
-        ${{ matrix.ls || 'ls -lh' }} wheelhouse/
+        ls -lh wheelhouse/
         twine check wheelhouse/*
     - name: Upload wheels
       uses: actions/upload-artifact@v4
       with:
-        name: wheels-${{ matrix.python-version }}
+        name: wheels
         path: ./wheelhouse/*
 
   upload_to_pypi:
@@ -68,7 +65,7 @@ jobs:
       - name: Retrieve wheels
         uses: actions/download-artifact@v4.1.8
         with:
-          merge-multiple: true
+          name: wheels
           path: wheels
 
       - name: List the build artifacts
